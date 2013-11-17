@@ -30,16 +30,13 @@ q:before, q:after { content: "." }
 .no_udl { text-decoration: none; }
 a{ text-decoration: none; }
 
-/* 定位 */
+/* 定位 布局 */
 .tl { text-align: left; }
 .tc { text-align: center; }
 .tr { text-align: right; }
 .bc { margin-left: auto; margin-right: auto; }			/* 使块级元素居中 */
 .fl { float: left; display: inline; }
 .fr { float: right; display: inline; }
-.cb { clear: both; }
-.cl { clear: left; }
-.cr { clear: right; }
 .clearfix:after { content: " "; display: block; height: 0; clear: both; visibility: hidden; }
 .clearfix { *zoom: 1; }
 .vm { vertical-align: middle; }
@@ -47,8 +44,11 @@ a{ text-decoration: none; }
 .pa { position: absolute; }
 .abs-right { position: absolute; right: 0 }
 .zoom { zoom: 1 }
-.hidden { visibility: hidden; }
 .none { display: none; }
+.iblock{ display: inline-block; }
+.block{ display: block; }
+.inline{ display: inline; }
+.hidden{ overflow: hidden; }
 /* 宽/高度 */
 .w { width: 100% }
 .w10 { width: 10px; }

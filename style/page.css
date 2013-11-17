@@ -1,5 +1,26 @@
-body{ font: 13px; } 
+body{ font: 13px; }
+.mr150{ margin-right: 150px; } 
 .nav{ background-color: #000; height: 45px; line-height: 2.5em; }
 .nav a{ color: #fff; }
 .logo{ height: 150px; background: url('../images/logo-bg.png'); }
-.logo-title{ height: 150px; width: 460px; background: url('../images/logo-title.png'); } 
+.logo-title{ height: 150px; width: 460px; background: url('../images/logo-title.png'); }
+
+#content{ height: 350px; background-color: #fff; }
+.content{ width: 720px; height: 250px; 1background-color: #000; }
+.content-man{ width: 140px; height: 250px; background: url('../images/style.png') 0 0; }
+.content-man:hover{ background-position: 147px 0; }
+.content-txt{ background: url('../images/clickme.png'); width: 125px; height: 25px; position: absolute; top: 180px; left: 20px; }
+.content-a{  }
+span.content-b{ background-position:10px 50px; }
+span.content-c{ background-position:0 25px; }
+.content-man:hover .content-txt{
+	background: url('../images/work.png') no-repeat;
+	width: 99px;
+	height: 100px;
+	top: 36px;
+	left: 21px;
+}
+.content-man:hover span.content-b{ background-position: 0 -100px; }
+.content-man:hover span.content-c{ background-position: 0 -201px; }
+
+#footer{ height: 200px; background-color: #000; }  
