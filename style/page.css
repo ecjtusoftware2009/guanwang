@@ -1,0 +1,5 @@
+body{ font: 13px; } 
+.nav{ background-color: #000; height: 45px; line-height: 2.5em; }
+.nav a{ color: #fff; }
+.logo{ height: 150px; background: url('../images/logo-bg.png'); }
+.logo-title{ height: 150px; width: 460px; background: url('../images/logo-title.png'); } 
