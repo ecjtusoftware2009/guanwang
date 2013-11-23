@@ -8,10 +8,10 @@ body{ font: 13px; }
 #content{  background-color: #fff; }
 
 
-#footer{ height: 200px; background-color: #000; }
+#footer{ height: 200px; background-color: #333; }
 
 /* index page */
-.content{ height: 350px; width: 720px; }
+.content{ height: 330px; width: 720px; }
 .content-man{ width: 140px; height: 250px; background: url('../images/style.png') 0 0; }
 .content-man:hover{ background-position: 147px 0; }
 .content-txt{ background: url('../images/clickme.png'); width: 125px; height: 25px; position: absolute; top: 180px; left: 20px; }
@@ -27,13 +27,19 @@ span.content-c{ background-position:0 25px; }
 }
 .content-man:hover span.content-b{ background-position: 0 -100px; }
 .content-man:hover span.content-c{ background-position: 0 -201px; }
+.content-triangle{
+	border: 30px solid transparent;
+	position: absolute;
+	left: 330px;
+}
+.content-triangleTop{ border-top-color: #39ABD5; top:0; }
+.content-triangleBottom{ border-bottom-color: #333; bottom:0; }
 
 /* select page */
-.figure{ height: 200px; background: url('../images/select-kouhao.jpg') left 75px no-repeat; }
-.figure-man{ width: 98px; height: 119px; background: url('../images/select-man.png') 0 bottom no-repeat; 
-	margin-left: 280px;
-	padding-top: 10px;
-}
+.figure{ height: 200px;  }
+.figureSelectKouhao{ background: url('../images/select-kouhao.jpg') left 75px no-repeat; }
+.figure-man{ height: 119px; padding-top: 10px; background: url('../images/select-man.png') no-repeat; }
+.figure-selectMan{ background-position: 268px bottom; }
 .select{}
 .select-item{ 
 	width: 213px; height: 200px; margin: 0 6px 12px; float: left; display: inline; 
@@ -42,3 +48,9 @@ span.content-c{ background-position:0 25px; }
 .select-topic{  }
 
 /* 交易流程 */
+.figureFlowKouhao{ background: url('../images/flow-kouhao.png') left 75px no-repeat; }
+.figure-flowMan{ background-position: right bottom; }
+.flowContent{ background: url('../images/bgImage.png'); }
+.flow-content{ width: 887px; height: 1450px; }
+.flow-content-title{ width:102px; height: 116px; background: url('../images/flow-chart-txt.png'); }
+.flow-content-chart{ width: 785px; height: 1321px; background: url('../images/flow-chart-img.png'); }
