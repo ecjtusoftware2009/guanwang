@@ -12,9 +12,30 @@ body{ font: 13px; }
 
 /* index page */
 .content{ height: 330px; width: 720px; }
-.content-man{ width: 140px; height: 250px; background: url('../images/style.png') 0 0; }
+.content-man{ 
+	width: 140px;
+	height: 250px;
+	background: url('../images/style.png') 0 0;
+	-webkit-transition: all 0.03s 0.03s;
+	-moz-transition: all 0.03s 0.03s;
+	-o-transition: all 0.03s 0.03s;
+	-ms-transition: all 0.03s 0.03s;
+	transition: all 0.03s 0.03s; 
+}
 .content-man:hover{ background-position: 147px 0; }
-.content-txt{ background: url('../images/clickme.png'); width: 125px; height: 25px; position: absolute; top: 180px; left: 20px; }
+.content-txt{ 
+	background: url('../images/clickme.png');
+	width: 125px;
+	height: 25px;
+	position: absolute;
+	top: 180px;
+	left: 20px;
+	-webkit-transition: all 0.03s 0.03s;
+	-moz-transition: all 0.03s 0.03s;
+	-o-transition: all 0.03s 0.03s;
+	-ms-transition: all 0.03s 0.03s;
+	transition: all 0.03s 0.03s; 
+}
 .content-a{  }
 span.content-b{ background-position:10px 50px; }
 span.content-c{ background-position:0 25px; }
@@ -24,14 +45,17 @@ span.content-c{ background-position:0 25px; }
 	height: 100px;
 	top: 36px;
 	left: 21px;
+	-webkit-transition: all 0.03s 0.03s;
+	-moz-transition: all 0.03s 0.03s;
+	-o-transition: all 0.03s 0.03s;
+	-ms-transition: all 0.03s 0.03s;
+	transition: all 0.03s 0.03s;
 }
 .content-man:hover span.content-b{ background-position: 0 -100px; }
 .content-man:hover span.content-c{ background-position: 0 -201px; }
-.content-triangle{
-	border: 30px solid transparent;
-	position: absolute;
-	left: 330px;
-}
+
+/* 上下三角形 */
+.content-triangle{ border: 30px solid transparent; position: absolute; left: 330px; }
 .content-triangleTop{ border-top-color: #39ABD5; top:0; }
 .content-triangleBottom{ border-bottom-color: #333; bottom:0; }
 
