@@ -22,23 +22,138 @@
 	</div>
 	<!-- // header -->
 	<div id="content">
-		<ul class="select w900 bc clearfix">
-			<li class="select-item select-topic"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
-			<li class="select-item"></li>
+		<ul class="select w900 bc clearfix" id="J_select">
+			<li class="select-item select-topic fb">
+				<p>毕设选题</p>				
+			</li>
+			<!-- //============  添加选题   ========== -->
+			<li class="select-item transform">
+				<div class="transform-3d size100">
+					<p class="transform-face transform-front">
+						<span class="select-item-title inb">基于PHP语言的共享系统设计与实现</span>
+					</p>
+					<p class="transform-face transform-back">
+						<span class="select-item-img inb"></span>
+					</p>
+				</div>
+			</li>
+			<li class="select-item transform">
+				<div class="transform-3d size100">
+					<p class="transform-face transform-front">
+						<span class="select-item-title inb">基于PHP语言的共享系统设计与实现</span>
+					</p>
+					<p class="transform-face transform-back">
+						<span class="select-item-img inb"></span>
+					</p>
+				</div>
+			</li>
+			<li class="select-item transform">
+				<div class="transform-3d size100">
+					<p class="transform-face transform-front">
+						<span class="select-item-title inb">基于PHP语言的共享系统设计与实现</span>
+					</p>
+					<p class="transform-face transform-back">
+						<span class="select-item-img inb"></span>
+					</p>
+				</div>
+			</li>
+			<li class="select-item transform">
+				<div class="transform-3d size100">
+					<p class="transform-face transform-front">
+						<span class="select-item-title inb">基于PHP语言的共享系统设计与实现</span>
+					</p>
+					<p class="transform-face transform-back">
+						<span class="select-item-img inb"></span>
+					</p>
+				</div>
+			</li>
+			<li class="select-item transform">
+				<div class="transform-3d size100">
+					<p class="transform-face transform-front">
+						<span class="select-item-title inb">基于PHP语言的共享系统设计与实现</span>
+					</p>
+					<p class="transform-face transform-back">
+						<span class="select-item-img inb"></span>
+					</p>
+				</div>
+			</li>
+			<li class="select-item transform">
+				<div class="transform-3d size100">
+					<p class="transform-face transform-front">
+						<span class="select-item-title inb">基于PHP语言的共享系统设计与实现</span>
+					</p>
+					<p class="transform-face transform-back">
+						<span class="select-item-img inb"></span>
+					</p>
+				</div>
+			</li>
+			<li class="select-item transform">
+				<div class="transform-3d size100">
+					<p class="transform-face transform-front">
+						<span class="select-item-title inb">基于PHP语言的共享系统设计与实现</span>
+					</p>
+					<p class="transform-face transform-back">
+						<span class="select-item-img inb"></span>
+					</p>
+				</div>
+			</li>
+			<li class="select-item transform">
+				<div class="transform-3d size100">
+					<p class="transform-face transform-front">
+						<span class="select-item-title inb">基于PHP语言的共享系统设计与实现</span>
+					</p>
+					<p class="transform-face transform-back">
+						<span class="select-item-img inb"></span>
+					</p>
+				</div>
+			</li>
+			<li class="select-item transform">
+				<div class="transform-3d size100">
+					<p class="transform-face transform-front">
+						<span class="select-item-title inb">基于PHP语言的共享系统设计与实现</span>
+					</p>
+					<p class="transform-face transform-back">
+						<span class="select-item-img inb"></span>
+					</p>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<!-- // content -->
-	<div id="footer"></div>
+	<div id="footer">
+		<p class="advice">一句话赠言: <span>如果你不改变世界，世界就会改变你</span></p>
+		<p>CopyRight 2013 By [莫捉急] .All Rights Reserved</p>
+		<p>网站版本号：version 1.0，版权所有：莫捉急 项目小组，由 莫捉急 负责维护</p>
+		<p>联系方式：18702147885，QQ:417204900 信箱:417204900@qq.com 
+		<p>注:本站累计发布选题38个，已下架7个，自主定制3个，剩余31个，您是第87位独立IP访客。选题仍在更新中，敬请期待</p>
+	</div>
+	<script>
+	(function() {
+		
+		var getByClassName = function(className, root, tagName) {
+			var root = root || document;
+			var tagName = tagName || '*';
+			if(document.getElementsByClassName) return root.getElementsByClassName(className);
+			var tagElem = root.getElementsByTagName(tagName);
+			var elems = [];
+			// 筛选拥有className的元素
+			for(var i=0, e; e = tagElem[i]; i++) {
+				e.className.indexOf(className) !== -1 ? elems.push(e) : '';
+			}
+			return elems;
+		}
+		var select = document.getElementById('J_select');
+		var fronts = getByClassName('transform-front', select, 'p');
+		var back_imgs = getByClassName('select-item-img', select, 'span');
+		// 顺序添加小人头
+		for(var i = back_imgs.length; i--; ) {
+			back_imgs[i].style.backgroundPosition = '0 ' + (- i % 6 * 110) + 'px';
+		}
+		// 间隔添加背景色
+		for(var i=0, len=fronts.length; i<len; i++) {
+			fronts[i].style.backgroundColor = i % 2 ? '#2fa7d8' : '#b3b6b7';
+		}
+	})();
+	</script>
 </body>
 </html>

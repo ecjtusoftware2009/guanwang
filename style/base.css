@@ -19,6 +19,9 @@ q:before, q:after { content: "." }
 .f14 { font-size: 14px }
 .f16 { font-size: 16px }
 .f20 { font-size: 20px }
+.f1-2{ font-size: 1.2em }
+.f1-5{ font-size: 1.5em }
+.f2-0{ font-size: 2em }
 .fb { font-weight: bold; }
 .fn { font-weight: normal; }
 .t2 { text-align: 2em }
