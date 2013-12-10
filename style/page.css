@@ -13,7 +13,7 @@ body{ font: 14px normal Helvetica, Arial, sans-serif; }
 #footer{ background-color: #333;  padding-top: 50px; padding-bottom: 10px; }
 #footer p{ width:900px; margin: 0 auto; text-align: center; line-height: 1.5em; color: #eee; }
 .advice{ padding-bottom: 8px; }
-.advice span{ text-shadow:1px 1px 5px yellow; 1font-weight: bolder; }
+.advice span{ text-shadow:1px 1px 5px yellow; }
 
 /* index page */
 .content{ height: 330px; width: 720px; }
@@ -112,5 +112,11 @@ span.content-c{ background-position:0 25px; }
 .helpers-question{  }
 .helpers-answer{}
 .helpers-answer-notice{ color: red; }
-.helpers-even{ background-color: #fff; border: 1px solid #ccc; border-radius: 30px 0px 30px 0px; box-shadow: 0 1px 5px rgba(0,0,0, .25); }
+.helpers-even{ 
+	background-color: #fff; 
+	border: 1px solid #ccc; 
+	border-radius: 30px 0px 30px 0px; 
+	box-shadow: 0 1px 5px rgba(0,0,0, .25);
+	behavior: url('ie-css3.htc'); 
+}
 
